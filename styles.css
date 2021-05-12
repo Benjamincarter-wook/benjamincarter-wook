@@ -1,0 +1,62 @@
+body{
+    background-color:black;
+    color: white;
+}
+header{
+    border: 2px solid lime;
+    height:10vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+main{
+    box-sizing: border-box;
+    height: 80vh;
+    width: 100vw;
+    border:2px solid salmon;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro{
+    box-sizing: border-box;
+    border:2px solid magenta;
+    width:90vw;
+    height: 10vh;
+   
+}
+
+.Scale{
+    border: 2px solid red;
+    height:20vh;
+    width: 33vw;
+    box-sizing: border-box;
+    
+}
+.Tuning{
+    box-sizing: border-box;
+    border: 2px solid green;
+    height: 20vh;
+    width: 33vw;
+   
+}
+.Tension{
+    border: 2px solid blue;
+    height:20vh;
+    width: 33vw;
+    box-sizing: border-box;
+    
+}
+.results{
+    border: 2px solid gainsboro;
+    height: 60vh;
+    width: 50vw;
+    box-sizing: border-box;
+    
+}
