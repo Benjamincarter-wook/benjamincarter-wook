@@ -1,0 +1,151 @@
+body{
+    background-color:black;
+    color: white;
+    border: 2px solid wheat;
+    box-sizing: border-box;
+    height:100%;
+    width:100%;
+}
+header{
+    border: 2px solid lime;
+    height:10vh;
+    width: 90vw;
+    box-sizing: border-box;
+    display:flex;
+    margin:auto;
+}
+
+.site-title{
+    border: 2px solid purple;
+    width: 40vw;
+    height: 10vh;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    border: 2px solid blue;
+    width: 20vw;
+    height: 10vh;
+    box-sizing: border-box;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+}
+.site-title{
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+}
+/* all parts for left hand selecters */
+main{
+    box-sizing: border-box;
+    height: 100%;
+    width: 90vw;
+    border:2px solid salmon;
+    box-sizing: border-box;
+  
+    margin: auto;
+}
+
+section{
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+
+}
+.intro{
+    box-sizing: border-box;
+    border:2px solid magenta;
+    width:80vw;
+    height: 10vh;
+    margin:auto
+}
+
+.details{
+    border: 2px solid red;
+    height: 20vh;;
+    width: 80vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin:auto;
+}
+.gibson{
+    display:inline;
+    border: 2px solid green;
+    width: 15vw;
+    height: 15vh;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.fender{
+    display:block;
+    border: 2px solid yellow;
+    width: 15vw;
+    height: 15vh;
+    align-items: center;
+    justify-content:space-evenly;
+}
+img {
+    height:80%;
+    width: 60%;
+    display:flex
+}
+/* tunnning restricted to E standard, Half-step, D standard, C standard, B standard */
+.Tuning{
+    box-sizing: border-box;
+    border: 2px solid green;
+    width: 15vw;
+    height: 15vh;
+    /* margin:auto; */
+}
+
+.Tension{
+    border: 2px solid blue;
+    width: 15vw;
+    height: 15vh;
+    box-sizing: border-box;
+    /* margin:auto; */
+}
+/* results box */
+.results{
+    border: 2px solid gainsboro;
+    height: 40vh;
+    width: 80vw;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin:auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+#first-result{
+    box-sizing: border-box;
+    border: 2px solid green;
+    width: 30vw;
+    height: 30vh;
+   
+}
+#second-result{
+    box-sizing: border-box; 
+    border: 2px solid purple;
+    width: 30vw;
+    height: 30vh;
+}
+#third-result{
+    box-sizing: border-box;
+    border: 2px solid red;
+    width: 30vw;
+    height: 30vh; 
+}
+
+footer{
+    border: 2px solid grey;
+    height: 15vh;
+    width: 90vw;
+    box-sizing: border-box;  
+    margin:auto
+}
