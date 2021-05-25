@@ -1,8 +1,13 @@
+
+*,*::before,*::after{
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@100;400&display=swap');
 body{
-    background-color:black;
+    background-color:rgb(2, 53, 110, 1);
     color: white;
     border: 2px solid wheat;
-    box-sizing: border-box;
     height:100%;
     width:100%;
 }
@@ -10,7 +15,6 @@ header{
     border: 2px solid lime;
     height:10vh;
     width: 90vw;
-    box-sizing: border-box;
     display:flex;
     margin:auto;
 }
@@ -19,15 +23,31 @@ header{
     border: 2px solid purple;
     width: 40vw;
     height: 10vh;
-    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-size:xx-large;
 }
 
-
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    outline: 2px solid #f00;
+  }
 .logo{
     border: 2px solid blue;
     width: 20vw;
     height: 10vh;
-    box-sizing: border-box;
     justify-content: center; 
     display: flex;
     align-items: center;
@@ -39,12 +59,12 @@ header{
 }
 /* all parts for left hand selecters */
 main{
-    box-sizing: border-box;
+
     height: 100%;
     width: 90vw;
     border:2px solid salmon;
     box-sizing: border-box;
-  
+    font-family: 'Bitter', serif;
     margin: auto;
 }
 
@@ -55,7 +75,7 @@ section{
 
 }
 .intro{
-    box-sizing: border-box;
+
     border:2px solid magenta;
     width:80vw;
     height: 10vh;
@@ -64,69 +84,76 @@ section{
 
 .details{
     border: 2px solid red;
-    height: 20vh;;
+    height: 30vh;
     width: 80vw;
-    box-sizing: border-box;
+  
     display: flex;
     /* justify-content:space-between; */
     /* align-items: center; */
     /* margin:auto; */
 }
 .gibson{
+    /* background:white; */
+    color:white;
     display:inline;
     border: 2px solid green;
-    width: 15vw;
-    height: 20vh;
+    width: 10vw;
+    height: 30vh;
     display:flex;
     align-items: center;
     justify-content:center;
+    background-size:contain;
 }
 .fender{
-    display:block;
+    /* background:white; */
+    color:white;
+    display:inline;
     border: 2px solid yellow;
-    width: 15vw;
-    height: 20vh;
+    width: 10vw;
+    height: 30vh;
     display:flex;
     align-items: center;
     justify-content:center;
-
+    background-size:contain;
 }
 img{
-    height:80%;
-    width: 60%;
+    background:white;
+    width: 100%;
     display:flex
 }
 /* tunnning restricted to E standard, Half-step, D standard, C standard, B standard */
-.Tuning{
+/* Tuning{ 
     box-sizing: border-box;
     border: 2px solid green;
     width: 15vw;
-    height: 20vh;
-    /* display:flex; */
+    height: 30vh;
+    overflow:wrap;
+    display:flex;
     align-items:center;
-    /* justify-content:space-evenly; */
+    justify-content:space-evenly;
     flex-wrap: wrap;
-    /* margin:auto; */
+    margin:auto;
+} */
+
+fieldset{
+    display: flex;
 }
-
-
 .Tension{
     border: 2px solid blue;
-    width: 15vw;
-    height: 20vh;
-    box-sizing: border-box;
+    width: 30vw;
+    height: 30vh;
     flex-wrap: wrap;
-    /* display:flex;
-    align-items: center;
-    justify-content:center; */
-    /* margin:auto; */
+    overflow:wrap;
+    display:block; 
+    /* align-items: center; */
+    justify-content:center; 
+    margin:auto;
 }
 /* results box */
 .results{
     border: 2px solid gainsboro;
     height: 40vh;
     width: 80vw;
-    box-sizing: border-box;
     justify-content: space-evenly;
     margin:auto;
     display:flex;
@@ -135,20 +162,17 @@ img{
     
 }
 #first-result{
-    box-sizing: border-box;
     border: 2px solid green;
     width: 30vw;
     height: 30vh;
    
 }
 #second-result{
-    box-sizing: border-box; 
     border: 2px solid purple;
     width: 30vw;
     height: 30vh;
 }
 #third-result{
-    box-sizing: border-box;
     border: 2px solid red;
     width: 30vw;
     height: 30vh; 
@@ -158,6 +182,5 @@ footer{
     border: 2px solid grey;
     height: 15vh;
     width: 90vw;
-    box-sizing: border-box;  
     margin:auto
 }

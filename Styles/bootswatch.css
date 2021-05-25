@@ -11094,3 +11094,187 @@ label,
 .modal-header, .modal-footer {
   background-color: rgba(255, 255, 255, 0.075);
 }
+
+*,*::before,*::after{
+  box-sizing: border-box
+}
+/* body{
+  background-color:rgb(2, 53, 110, 1);
+  color: white;
+  border: 2px solid wheat;
+  height:100%;
+  width:100%;
+} */
+.site-logo{
+  width: 1%;
+  height: 1%;
+}
+header{
+  border: 2px solid lime;
+  height:10vh;
+  width: 90vw;
+  display:flex;
+  margin:auto;
+}
+
+.site-title{
+  border: 2px solid purple;
+  width: 40vw;
+  height: 10vh;
+}
+/* HIDE RADIO */
+[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+.logo{
+  border: 2px solid blue;
+  width: 8vw;
+  height: 10vh;
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+}
+.site-title{
+  justify-content: center; 
+  display: flex;
+  align-items: center;
+}
+/* all parts for left hand selecters */
+main{
+
+  height: 100%;
+  width: 90vw;
+  border:2px solid salmon;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.intro{
+
+  border:2px solid magenta;
+  width:80vw;
+  height: 10vh;
+  margin:auto
+}
+
+.details{
+  border: 2px solid red;
+  height: 30vh;
+  width: 80vw;
+
+  display: flex;
+  /* justify-content:space-between; */
+  /* align-items: center; */
+  /* margin:auto; */
+}
+.gibson{
+  /* background:white; */
+  color:white;
+  display:inline;
+  border: 2px solid green;
+  width: 10vw;
+  height: 30vh;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  background-size:contain;
+}
+.fender{
+  /* background:white; */
+  color:white;
+  display:inline;
+  border: 2px solid yellow;
+  width: 10vw;
+  height: 30vh;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  background-size:contain;
+}
+img{
+  background:white;
+  width: 100%;
+  display:flex
+}
+/* tunnning restricted to E standard, Half-step, D standard, C standard, B standard */
+.submit{ 
+  box-sizing: border-box;
+  border: 2px solid green;
+  width: 15vw;
+  height: 30vh;
+  overflow:wrap;
+  display:flex;
+  align-items:center;
+  /* justify-content:space-evenly; */
+  /* flex-wrap: wrap; */
+  /* margin:auto; */
+}
+
+fieldset{
+  display: flex;
+}
+.Tension{
+  border: 2px solid blue;
+  width: 30vw;
+  height: 30vh;
+  flex-wrap: wrap;
+  overflow:wrap;
+  display:block; 
+  /* align-items: center; */
+  justify-content:center; 
+  margin:auto;
+}
+/* results box */
+.results{
+  border: 2px solid gainsboro;
+  height: 40vh;
+  width: 80vw;
+  justify-content: space-evenly;
+  margin:auto;
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  
+}
+#first-result{
+  border: 2px solid green;
+  width: 30vw;
+  height: 30vh;
+ 
+}
+#second-result{
+  border: 2px solid purple;
+  width: 30vw;
+  height: 30vh;
+}
+#third-result{
+  border: 2px solid red;
+  width: 30vw;
+  height: 30vh; 
+}
+
+footer{
+  border: 2px solid grey;
+  height: 15vh;
+  width: 90vw;
+  margin:auto
+}
