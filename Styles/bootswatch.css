@@ -11106,8 +11106,8 @@ label,
   width:100%;
 } */
 .site-logo{
-  width: 1%;
-  height: 1%;
+  width: 100%;
+  height: 100%;
 }
 header{
   border: 2px solid lime;
@@ -11137,7 +11137,7 @@ header{
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-  outline: 2px solid #f00;
+  outline: 5px solid #abb6c2
 }
 .logo{
   border: 2px solid blue;
@@ -11166,8 +11166,8 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 .intro{
 
   border:2px solid magenta;
@@ -11176,10 +11176,11 @@ section{
   margin:auto
 }
 
-.details{
+.question-1{
   border: 2px solid red;
   height: 30vh;
   width: 80vw;
+  object-fit: contain;
 
   display: flex;
   /* justify-content:space-between; */
@@ -11191,86 +11192,85 @@ section{
   color:white;
   display:inline;
   border: 2px solid green;
-  width: 10vw;
+  width: 15vw;
   height: 30vh;
   display:flex;
   align-items: center;
   justify-content:center;
-  background-size:contain;
+  object-fit: contain;
 }
 .fender{
   /* background:white; */
   color:white;
   display:inline;
   border: 2px solid yellow;
-  width: 10vw;
+  width: 15vw;
   height: 30vh;
   display:flex;
   align-items: center;
   justify-content:center;
-  background-size:contain;
+ 
+
 }
 img{
   background:white;
   width: 100%;
-  display:flex
-}
-/* tunnning restricted to E standard, Half-step, D standard, C standard, B standard */
-.submit{ 
-  box-sizing: border-box;
-  border: 2px solid green;
-  width: 15vw;
-  height: 30vh;
-  overflow:wrap;
   display:flex;
-  align-items:center;
-  /* justify-content:space-evenly; */
-  /* flex-wrap: wrap; */
-  /* margin:auto; */
 }
-
 fieldset{
   display: flex;
 }
-.Tension{
+.question-2{
   border: 2px solid blue;
   width: 30vw;
   height: 30vh;
   flex-wrap: wrap;
   overflow:wrap;
   display:block; 
-  /* align-items: center; */
+  align-items: center; 
   justify-content:center; 
-  margin:auto;
+  margin:auto; 
 }
-/* results box */
-.results{
-  border: 2px solid gainsboro;
-  height: 40vh;
-  width: 80vw;
-  justify-content: space-evenly;
-  margin:auto;
+
+.submit-button{
   display:flex;
-  justify-content:space-evenly;
   align-items: center;
+  justify-content:center;
+  object-fit: contain;
+  height: 30vh;
+}
+
+/* results box */
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
   
-}
-#first-result{
-  border: 2px solid green;
-  width: 30vw;
-  height: 30vh;
- 
-}
-#second-result{
-  border: 2px solid purple;
-  width: 30vw;
-  height: 30vh;
-}
-#third-result{
-  border: 2px solid red;
-  width: 30vw;
-  height: 30vh; 
-}
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    color: black;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */ 
+   .close { 
+    color: #aaa;
+    float:right;
+    font-size: 40px;
+    font-weight: bold;
+  } 
 
 footer{
   border: 2px solid grey;

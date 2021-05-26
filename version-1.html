@@ -19,10 +19,12 @@
             <p>This will be an introduction to the widget</p>
         </div>
         <section>   
-            <form>   
-            <div class="question-1">
-                <fieldset>  
-                    <h3>Select scale length:</h3>
+                 
+            <div class="details">
+                <form>
+                    <fieldset>  
+                <div class ="scale"></div>
+                <h3>Select scale length:</h3>
                 <div class="gibson">
                   <label>
                       <input type="radio" id="gibson"name="scale-length" value="gibson">
@@ -37,7 +39,7 @@
                       <p>25.5 or fender scale</p>
                   </label>
                 </div>                         
-                <div class="question-2">
+                <div class="Tension">
                     <h3>Tension:</h3>
                     <div class="d-grid gap-2" id="tension-group">
                         <input type="radio" class="btn-check" name="tension" id="btnradio1" value="tight" autocomplete="off" checked="">
@@ -51,18 +53,18 @@
                 </div>
             </fieldset>
             </form>
-            <div class="submit-button">
-                <button type="button" class="btn btn-danger btn-lg" id="mybtn">Submit to the string Wizard
-                </button>
-            </div>
-            <div class="modal" id="myModal">
-               <!-- popupcontent -->
-            <div class="modal-content">
-               <span class="close">&times;</span>
-                <p>The wizards divines your best set is:</p>
-            </div>
+            <div class="submit">
+                <button type="button" class="btn btn-danger btn-lg" id="submit"><p>Submit to the string Wizard</p></button>
             </div>
             </div>            
+        </section>
+        <section>
+            <div class="results">
+                <h3>Your best options are:</h3>
+            <div id="first-result"></div>
+            <div id="second-result"></div>
+            <div id="third-result"></div>
+            </div>
         </section>
             <footer>
         <h2>Footer details:</h2>
@@ -70,6 +72,6 @@
     </main>
     
             
-        <script src="app.js"></script>
+        
 </body>
 </html>
