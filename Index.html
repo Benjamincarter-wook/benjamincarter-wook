@@ -23,7 +23,7 @@
             <div class="question-1">
                 <fieldset>  
                     <h3>Select scale length:</h3>
-                <div class="gibson">
+                <div class="gibson" id="scale">
                   <label>
                       <input type="radio" id="gibson"name="scale-length" value="gibson">
                         <img src="./images/LP-style-noun-Guitar-1096.png">
@@ -39,20 +39,26 @@
                 </div>                         
                 <div class="question-2">
                     <h3>Tension:</h3>
+                    <!-- <label>
+                    <input type="radio" id="loose" name="tension" value="loose">
+                    <div class="btn btn-outline-primary" id="btnradio1"><p>loose</p></div>
+                    </label> -->
                     <div class="d-grid gap-2" id="tension-group">
-                        <input type="radio" class="btn-check" name="tension" id="btnradio1" value="tight" autocomplete="off" checked="">
+                        <input type="radio" class="btn-check" name="tension" id="btnradio1" value="tight" autocomplete="off" >
                             <label class="btn btn-outline-primary" for="btnradio1">Tight</label>
-                        <input type="radio" class="btn-check" name="tension" id="btnradio2" value="medium" autocomplete="off" checked="">
+                        <input type="radio" class="btn-check" name="tension" id="btnradio2" value="medium" autocomplete="off" >
                             <label class="btn btn-outline-primary" for="btnradio2">Medium</label>
-                        <input type="radio" class="btn-check" name="tension" id="btnradio3" value=" loose" autocomplete="off" checked="">
+                        <input type="radio" class="btn-check" name="tension" id="btnradio3" value=" loose" autocomplete="off" >
                             <label class="btn btn-outline-primary" for="btnradio3">Loose</label>
                     </div>
+ 
+                   
                     
                 </div>
             </fieldset>
             </form>
             <div class="submit-button">
-                <button type="button" class="btn btn-danger btn-lg" id="mybtn">Submit to the string Wizard
+                <button type="button"  class="btn btn-danger btn-lg" id="myBtn">Submit to the string Wizard
                 </button>
             </div>
             <div class="modal" id="myModal">
@@ -60,6 +66,9 @@
             <div class="modal-content">
                <span class="close">&times;</span>
                 <p>The wizards divines your best set is:</p>
+                  
+
+             </div>
             </div>
             </div>
             </div>            

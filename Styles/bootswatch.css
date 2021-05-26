@@ -11213,8 +11213,9 @@ section{
 
 }
 img{
+  border-radius: 80px;
   background:white;
-  width: 100%;
+  width: 40%;
   display:flex;
 }
 fieldset{
