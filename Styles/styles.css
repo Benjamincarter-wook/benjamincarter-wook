@@ -15,7 +15,7 @@
   height: 100%;
 }
 header{
-  border: 2px solid lime;
+  /* border: 2px solid lime; */
   height:10vh;
   width: 90vw;
   display:flex;
@@ -23,7 +23,7 @@ header{
 }
 
 .site-title{
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   width: 40vw;
   height: 10vh;
 }
@@ -42,10 +42,10 @@ header{
 
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-  outline: 5px solid #abb6c2
+  outline: 5px solid #4c9be8
 }
 .logo{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 30vw;
   height: 10vh;
   justify-content: center; 
@@ -62,7 +62,7 @@ main{
 
   height: 100%;
   width: 90vw;
-  border:2px solid salmon;
+  /* border:2px solid salmon; */
   box-sizing: border-box;
   margin: auto;
 }
@@ -75,7 +75,7 @@ section{
 
 .intro{
 
-  border:2px solid magenta;
+  /* border:2px solid magenta; */
   width:80vw;
   height: 10vh;
   margin:auto
@@ -84,9 +84,8 @@ section{
 .question-1{
   border: 2px solid red;
   height: 30vh;
-  width: 80vw;
+  width: 40vw;
   object-fit: contain;
-
   display: flex;
   justify-content:center;
   align-items: center;
@@ -96,7 +95,7 @@ section{
   /* background:white; */
   color:white;
   display:inline;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 15vw;
   height: 30vh;
   display:flex;
@@ -108,7 +107,7 @@ section{
   /* background:white; */
   color:white;
   display:inline;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 15vw;
   height: 30vh;
   display:flex;
@@ -120,7 +119,7 @@ section{
 .cards{
   border-radius: 80px;
   background:white;
-  width: 40%;
+  width: 60%;
   display:flex;
 }
 fieldset{
@@ -130,20 +129,21 @@ fieldset{
   border: 2px solid blue;
   width: 30vw;
   height: 30vh;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   overflow:wrap;
-  display:block; 
-  align-items: center; 
+  display:block;  
+  align-items: center;  
   justify-content:center; 
   margin:auto; 
-}
+} 
 
 .submit-button{
   display:flex;
   align-items: center;
   justify-content:center;
   object-fit: contain;
-  height: 30vh;
+  height: 20vh;
+  margin:auto;
 }
 
 /* results box */
@@ -184,7 +184,7 @@ fieldset{
   } 
 
 footer{
-  border: 2px solid grey;
+  /* border: 2px solid grey; */
   height: 15vh;
   width: 90vw;
   margin:auto
