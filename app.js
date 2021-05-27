@@ -1,14 +1,18 @@
 const form = document.querySelector('form')
-let Strings = [
-    { text : "Ernie Ball 9's",
-        imgSrc :'images/EB-9.png'},
-    { text: "Ernie Ball 10's",   
-       imgSrc: 'images/EB-10.png'},
-    { text:"Ernie Ball 11's",
-       imgSrc: 'images/EB-11.png'},
-    {text: "Ernie Ball 12's",
-    imgSrc:'images/EB-12.png'}]
-    
+let strings = [
+    'images/EB-9.png',
+    'images/EB-10.png',
+    'images/EB-11.png',
+    'images/EB-12.png']
+    const result = document.getElementById("result-img")
+    let modalcontent = document.getElementsByClassName('modal-content')
+    let gibson = document.getElementById('gibson');
+    let fender = document.getElementById('fender');
+    let loose = document.getElementById('btnradio3');
+    let medium = document.getElementById('btnradio2');
+    let tight = document.getElementById('btnradio1');
+
+    result.setAttribute(`src`, strings[0])
 
 // Get the modal
 let modal = document.getElementById('myModal');
@@ -21,24 +25,29 @@ let span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function(){
-    let gibson = document.getElementById('gibson');
-    let fender = document.getElementById('fender');
-    let loose = document.getElementById('btnradio3');
-    let medium = document.getElementById('btnradio2');
-    let tight = document.getElementById('btnradio1');
+ 
+    
     if (gibson.checked == true && loose.checked ==true){
-             console.log("test")}
-             
-    else if(fender.checked== true && loose.checked == true){    
-                console.log("test 2")}
+      result.setAttribute(`src`, strings[1])
+          }
+          else if(fender.checked== true && loose.checked == true){    
+            result.setAttribute(`src`, strings[0])
+              }
                 else if(gibson.checked== true && medium.checked == true){    
-                    console.log("test 3")}
+                  result.setAttribute(`src`, strings[2])
+                  }
                     else if(fender.checked== true && medium.checked == true){    
-                        console.log("test 4")}
+                      result.setAttribute(`src`, strings[1])
+                      }
                         else if(gibson.checked== true && tight.checked == true){    
-                            console.log("test 5")}
+                          result.setAttribute(`src`, strings[3])
+                          }
                             else if(fender.checked== true && tight.checked == true){    
-                                console.log("test 6")}
+                              result.setAttribute(`src`, strings[2])
+                              } 
+                                else (
+                                  "please select a scale length and tension to elicite the wizards help"
+                                )
                                 
    modal.style.display = "block";
   
