@@ -46,7 +46,7 @@ header{
 }
 .logo{
   border: 2px solid blue;
-  width: 8vw;
+  width: 30vw;
   height: 10vh;
   justify-content: center; 
   display: flex;
@@ -88,8 +88,8 @@ section{
   object-fit: contain;
 
   display: flex;
-  /* justify-content:space-between; */
-  /* align-items: center; */
+  justify-content:center;
+  align-items: center;
   /* margin:auto; */
 }
 .gibson{
@@ -117,7 +117,7 @@ section{
  
 
 }
-img{
+.cards{
   border-radius: 80px;
   background:white;
   width: 40%;
@@ -164,8 +164,8 @@ fieldset{
   /* Modal Content/Box */
   .modal-content {
     font-size: 50px;
-    background-color: #fefefe;
-    color: black;
+    background-color:#20374c;;
+    color: white;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;

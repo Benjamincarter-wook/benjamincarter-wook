@@ -11,7 +11,7 @@ let strings = [
     let loose = document.getElementById('btnradio3');
     let medium = document.getElementById('btnradio2');
     let tight = document.getElementById('btnradio1');
-
+    let resultText = document.querySelector('#result-text')
     result.setAttribute(`src`, strings[0])
 
 // Get the modal
@@ -45,9 +45,7 @@ btn.onclick = function(){
                             else if(fender.checked== true && tight.checked == true){    
                               result.setAttribute(`src`, strings[2])
                               } 
-                                else (
-                                  "please select a scale length and tension to elicite the wizards help"
-                                )
+                               
                                 
    modal.style.display = "block";
   
@@ -76,9 +74,6 @@ window.onclick = function(event) {
 
 // })
 
-function results(){
-    
-    }
 
 
 // document.getElementById("myBtn").addEventListener = ('submit', (event) => {

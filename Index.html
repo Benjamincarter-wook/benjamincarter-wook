@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo"> <img class="site-logo"src="./images/String-Wizard-logo.png"></div>
-  <h1 class="site-title">String Wizard</h1>
+  <h1 class="site-title"></h1>
     </header>
    
     
@@ -22,19 +22,21 @@
         <section>   
             <form>   
             <div class="question-1">
+                <h3>Select scale length:</h3>
                 <fieldset>  
-                    <h3>Select scale length:</h3>
+                    
                 <div class="gibson" id="scale">
+                    
                   <label>
                       <input type="radio" id="gibson"name="scale-length" value="gibson">
-                        <img src="./images/LP-style-noun-Guitar-1096.png">
+                        <img class="cards" src="./images/LP-style-noun-Guitar-1096.png">
                      <p>24.75 or gibson scale</p>
                   </label>
                 </div>
                 <div class="fender">
                   <label> 
-                    <input type="radio" id="fender" name="scale-length" value="fender">
-                         <img src="./images/noun_Guitar_1095.png">
+                    <input  type="radio" id="fender" name="scale-length" value="fender">
+                         <img class="cards" src="./images/noun_Guitar_1095.png">
                       <p>25.5 or fender scale</p>
                   </label>
                 </div>                         
@@ -44,6 +46,7 @@
                     <input type="radio" id="loose" name="tension" value="loose">
                     <div class="btn btn-outline-primary" id="btnradio1"><p>loose</p></div>
                     </label> -->
+                    <div>
                     <div class="d-grid gap-2" id="tension-group">
                         <input type="radio" class="btn-check" name="tension" id="btnradio1" value="tight" autocomplete="off" >
                             <label class="btn btn-outline-primary" for="btnradio1">Tight</label>
@@ -59,7 +62,7 @@
             </fieldset>
             </form>
             <div class="submit-button">
-                <button type="button"  class="btn btn-danger btn-lg" id="myBtn">Submit to the string Wizard
+                <button type="button"  class="btn btn-danger btn-lg" id="myBtn">Submit to the String Wizard
                 </button>
             </div>
             <div class="modal" id="myModal">
@@ -68,6 +71,7 @@
                <span class="close">&times;</span>
                 <p>The wizards divines your best set is:</p>
                     <img id="result-img">
+                    <p id="result-text"></p>
                     </div>
                   
 
