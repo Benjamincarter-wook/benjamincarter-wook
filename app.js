@@ -33,8 +33,6 @@ let span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function(){
- 
-    
     if (gibson.checked == true && loose.checked ==true){
       result.setAttribute(`src`, strings[1]);
       document.getElementById('#wizard');
