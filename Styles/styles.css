@@ -82,7 +82,7 @@ section{
 }
 
 .question-1{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 30vh;
   width: 40vw;
   object-fit: contain;
@@ -126,7 +126,7 @@ fieldset{
   display: flex;
 }
 .question-2{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 30vw;
   height: 30vh;
   flex-wrap: wrap; 
