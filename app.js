@@ -3,7 +3,16 @@ let strings = [
     'images/EB-9.png',
     'images/EB-10.png',
     'images/EB-11.png',
-    'images/EB-12.png']
+    'images/EB-12.png',
+    ]
+let Names = [
+  'Ernie Ball Super Slinky',
+  'Enire Ball Regular Slinky',
+  'Ernie Ball Power Slinky',
+  'Ernie Ball Not Even Slinky',
+  'Please Define Scale and Tension',
+]
+
     const result = document.getElementById("result-img")
     let modalcontent = document.getElementsByClassName('modal-content')
     let gibson = document.getElementById('gibson');
@@ -11,8 +20,7 @@ let strings = [
     let loose = document.getElementById('btnradio3');
     let medium = document.getElementById('btnradio2');
     let tight = document.getElementById('btnradio1');
-    let resultText = document.querySelector('#result-text')
-    result.setAttribute(`src`, strings[0])
+    const error = document.querySelector('#id');
 
 // Get the modal
 let modal = document.getElementById('myModal');
@@ -28,23 +36,38 @@ btn.onclick = function(){
  
     
     if (gibson.checked == true && loose.checked ==true){
-      result.setAttribute(`src`, strings[1])
+      result.setAttribute(`src`, strings[1]);
+      document.getElementById('#wizard');
+      wizard.innerHTML = "Ernie Ball Regular Slinky"
           }
           else if(fender.checked== true && loose.checked == true){    
-            result.setAttribute(`src`, strings[0])
+            result.setAttribute(`src`, strings[0]);
+            document.getElementById('#wizard');
+            wizard.innerHTML = "Ernie Ball Super Slinky"
               }
                 else if(gibson.checked== true && medium.checked == true){    
-                  result.setAttribute(`src`, strings[2])
+                  result.setAttribute(`src`, strings[2]);
+                  document.getElementById('#wizard');
+                  wizard.innerHTML = "Ernie Ball power Slinky"
                   }
                     else if(fender.checked== true && medium.checked == true){    
-                      result.setAttribute(`src`, strings[1])
+                      result.setAttribute(`src`, strings[1]);
+                      document.getElementById('#wizard');
+                      wizard.innerHTML = "Ernie Ball Regular Slinky"
                       }
                         else if(gibson.checked== true && tight.checked == true){    
-                          result.setAttribute(`src`, strings[3])
+                          result.setAttribute(`src`, strings[3]);
+                          document.getElementById('#wizard');
+                          wizard.innerHTML = "Ernie Ball Not Even Slinky"
                           }
                             else if(fender.checked== true && tight.checked == true){    
-                              result.setAttribute(`src`, strings[2])
+                              result.setAttribute(`src`, strings[2]);
+                              document.getElementById('#wizard');
+                              wizard.innerHTML = "Ernie Ball Power Slinky"
                               } 
+                              else {document.getElementById('#wizard');
+                              wizard.innerHTML = "Please select a tension  and scale length"}                              
+                              
                                
                                 
    modal.style.display = "block";
